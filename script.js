@@ -3,23 +3,25 @@ function myTask(dami) {
   for (i = 1; i <= dami; i++) {
 
     if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0) {
-      dami.push("yu-gi-oh");
+      data.push("yu-gi-oh");
     } else if (i % 2 === 0 && i % 3 === 0) {
-      dami.push("yu-gi");
+      data.push("yu-gi");
     } else if (i % 2 === 0 && i % 5 === 0) {
-      dami.push("yu-oh");
+      data.push("yu-oh");
     } else if (i % 3 === 0 && i % 5 === 0) {
-      dami.push("gi-oh");
+      data.push("gi-oh");
     } else if (i % 2 === 0) {
-      dami.push("yu");
+      data.push("yu");
     } else if (i % 3 === 0) {
-      dami.push("gi");
+      data.push("gi");
     } else if (i % 5 === 0) {
-      dami.push("oh");
+      data.push("oh");
     } else {
       data.push(i);
     }
-    console.log(dami);
   }
-  
+  console.log(data);
+    return data;
 }
+myTask(100);
+myTask(32);
